@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">☕coffee </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- about -->
+    <div class="sectionAbout" id="aboutus">
+        <img src="images/about-image.jpg" alt="">
+        <div class="flex">
+            <div class="about">ABOUT US</div>
+            <div class="atcoffee">At Coffee House in Berndorf, Germany, we pride ourselves on being a go-to destination
+                for coffee lovers and conversation seekers alike. We're dedicated to providing an exceptional coffee
+                experience in a cozy and inviting atmosphere, where guests can relax, unwind, and enjoy their time in
+                comfort.</div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="display">
+                <div class="coffeeshop">&#169;2025 coffee shop</div>
+                <div class="logo">
+                    <div class="fb"><a href="#"><img class="sm" src="images/facebook.png"></a></div>
+                    <div class="fb"><img class="sm" src="images/instagram.png"></div>
+                    <div class="fb"><img class="sm" src="images/twitter.png"></div>
+                </div>
+                <div class="refund">
+                    <div class="privacy">privacy policy</div>
+                    <div class="policy">
+                        <ul>
+                            <li>Refund policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Slick JS -->
+    <script src="js/slick.min.js"></script>
+
+    <script>
+        // Hamburger menu toggle
+        $('.hamburger').click(function() {
+            $('nav ul').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    </script>
+</body>
+
+</html>
