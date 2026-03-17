@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">☕coffee </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Testimonialssection -->
+    <section class="testimonials" id="Testimonials">
+        <h2 class="heading">What Our Customers Say</h2>
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial-card">
+                <img src="images/user-1.jpg">
+                <h3 class="heading">Sarah Johnson</h3>
+                <p>"Loved the French roast. Perfectly balanced and rich. Will order again!"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="images/user-2.jpg">
+                <h3 class="heading">James Wilson</h3>
+                <p>"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="images/user-3.jpg">
+                <h3 class="heading">Michael Brown</h3>
+                <p>"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="images/user-4.jpg">
+                <h3 class="heading">Emily Harris</h3>
+                <p>"Excellent quality! Fresh beans and quick delivery. Highly recommend."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="images/user-5.jpg">
+                <h3 class="heading">Anthony Thompson</h3>
+                <p>"Best decaf I’ve tried! Smooth and flavorful. Arrived promptly."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="images/user-6.jpg">
+                <h3 class="heading">Lionel Messi</h3>
+                <p>"Loved the smooth taste and rich aroma. Fresh beans and fast delivery. Highly satisfied."</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="display">
+                <div class="coffeeshop">&#169;2025 coffee shop</div>
+                <div class="logo">
+                    <div class="fb"><a href="#"><img class="sm" src="images/facebook.png"></a></div>
+                    <div class="fb"><img class="sm" src="images/instagram.png"></div>
+                    <div class="fb"><img class="sm" src="images/twitter.png"></div>
+                </div>
+                <div class="refund">
+                    <div class="privacy">privacy policy</div>
+                    <div class="policy">
+                        <ul>
+                            <li>Refund policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Slick JS -->
+    <script src="js/slick.min.js"></script>
+
+    <script>
+        $('.testimonial-slider').slick({
+            dots: true,
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+        // Hamburger menu toggle
+        $('.hamburger').click(function() {
+            $('nav ul').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    </script>
+</body>
+
+</html>

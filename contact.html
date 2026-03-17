@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Coffee Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">☕coffee </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Contactsection -->
+    <div class="Contactsection">
+        <div class="contact">
+            <p>CONTACT US</p>
+        </div>
+        <div class="left2">
+            <div class="location">
+                <p>🏭123 Compsite Avenue, Wilderness, CA 98765</p>
+            </div>
+            <div class="location">
+                <p>&#9993; info@coffeeshopwebsite.com </p>
+            </div>
+            <div class="location">
+                <p>&#9743;(123) 456-78909</p>
+            </div>
+            <div class="location">
+                <p>🕓Monday – Friday: 9:00 AM – 5:00 PM</p>
+            </div>
+            <div class="location">
+                <p>🕜Saturday: 10:00 AM – 3:00 PM</p>
+            </div>
+            <div class="location">
+                <p>🕦Sunday: Closed</p>
+            </div>
+            <div class="location">
+                <p>💻www.codingnepalweb.com</p>
+            </div>
+        </div>
+
+        <div class="right2">
+            <form action="#">
+                <input type="text" placeholder="You Name" name="Your Name" required class="details"><br><br>
+                <input type="text" placeholder="You email" name="Your email" required class="details"><br><br>
+                <textarea name="message" placeholder="Your Message" rows="5" cols="30"></textarea><br><br>
+            </form>
+
+            <button>Submit</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="display">
+                <div class="coffeeshop">&#169;2025 coffee shop</div>
+                <div class="logo">
+                    <div class="fb"><a href="#"><img class="sm" src="images/facebook.png"></a></div>
+                    <div class="fb"><img class="sm" src="images/instagram.png"></div>
+                    <div class="fb"><img class="sm" src="images/twitter.png"></div>
+                </div>
+                <div class="refund">
+                    <div class="privacy">privacy policy</div>
+                    <div class="policy">
+                        <ul>
+                            <li>Refund policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Slick JS -->
+    <script src="js/slick.min.js"></script>
+
+    <script>
+        // Hamburger menu toggle
+        $('.hamburger').click(function() {
+            $('nav ul').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    </script>
+</body>
+
+</html>

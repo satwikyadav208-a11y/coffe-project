@@ -1,0 +1,216 @@
+/* =====================================
+   GLOBAL RESPONSIVE FIXES
+===================================== */
+
+@media (max-width: 1200px){
+    header,
+    .container,
+    .sectionAbout,
+    .menusection,
+    .Gallerysection,
+    .Contactsection,
+    .display{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+/* =====================================
+   TABLET VIEW (≤1024px)
+===================================== */
+@media (max-width: 1024px){
+
+    /* HEADER */
+    header{
+        padding: 20px 40px;
+    }
+
+    nav ul{
+        gap: 5px;
+    }
+
+    /* HERO */
+    .container{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .right{
+        margin-top: 40px;
+    }
+
+    .rightpadding{
+        width: 400px;
+    }
+
+    /* ABOUT */
+    .sectionAbout{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        height: auto;
+    }
+
+    .atcoffee{
+        padding-left: 0;
+    }
+
+    /* MENU */
+    .food{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials{
+        height: auto;
+    }
+
+    /* GALLERY */
+    .Gallery{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* FOOTER */
+    .display{
+        gap: 60px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+/* =====================================
+   MOBILE VIEW (≤768px)
+===================================== */
+@media (max-width: 768px){
+
+    /* HEADER */
+    header{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* HERO */
+    .best{
+        font-size: 24px;
+    }
+
+    .day{
+        font-size: 28px;
+    }
+
+    .welcome{
+        font-size: 16px;
+    }
+
+    .rightpadding{
+        width: 300px;
+    }
+
+    /* ABOUT */
+    .about-img{
+        width: 300px;
+        height: 300px;
+    }
+
+    /* MENU */
+    .image{
+        width: 160px;
+        height: 160px;
+    }
+
+    .menusection .ourmenu ::after{
+    bottom: -7px;
+    left:296px;
+}
+
+    .text{
+        width: auto;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial-card{
+        margin: 10px;
+    }
+
+    /* GALLERY */
+    .img1{
+        width: 280px;
+        height: 200px;
+    }
+
+    /* CONTACT */
+    .Contactsection{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .left2,
+    .right2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .details,
+    textarea{
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .display{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* =====================================
+   SMALL MOBILE (≤480px)
+===================================== */
+@media (max-width: 480px){
+
+    /* HERO */
+    .day{
+        font-size: 24px;
+    }
+
+    .rightpadding{
+        width: 240px;
+    }
+
+    /* ABOUT */
+    .about-img{
+        width: 240px;
+        height: 240px;
+    }
+
+    /* MENU */
+    .image{
+        width: 140px;
+        height: 140px;
+    }
+
+    /* GALLERY */
+    .img1{
+        width: 100%;
+        height: auto;
+    }
+
+    /* CONTACT */
+    .location{
+        font-size: 14px;
+    }
+
+    .right2 button{
+        width: 100%;
+    }
+}
